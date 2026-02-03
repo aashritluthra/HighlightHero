@@ -13,5 +13,8 @@
   "packageManager": "npm@10.2.0",
   "workspaces": [
     "apps/*"
-  ]
+  ],
+  "dependencies": {
+    "@clerk/nextjs": "^6.37.1"
+  }
 }
