@@ -1,4 +1,5 @@
-import { SignInButton, SignUpButton, SignedOut } from "@clerk/nextjs";
+import { SignInButton, SignUpButton, SignedIn, SignedOut } from "@clerk/nextjs";
+import { UploadButton } from "@/components/UploadButton";
 
 export default function Home() {
   return (
@@ -22,6 +23,9 @@ export default function Home() {
           </SignUpButton>
         </div>
       </SignedOut>
+      <SignedIn>
+        <UploadButton />
+      </SignedIn>
     </main>
   );
 }
